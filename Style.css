@@ -1,0 +1,233 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Architects Daughter", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* CSS variables */
+:root {
+  --height: 45px;
+}
+
+/* Body */
+
+body {
+  /* background-color: black; */
+}
+/* Navigation Bar */
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  /* if position want to activate we definately have to use top  */
+  top: 0px;
+}
+
+#navbar::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  z-index: -1;
+  opacity: 0.4;
+}
+/* Navigation Bar : logo and image */
+.logo {
+  padding: 10px;
+}
+
+.logo img {
+  padding: 0px 10px;
+  height: 40px;
+  filter: invert(100);
+}
+/* Navigation Bar : list styling */
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 7px 40px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* sec section */
+#sec {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 390px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 58px;
+}
+#sec::before {
+  content: "";
+  position: absolute;
+  height: 73%;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: url("https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#sec h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#sec p {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Services section */
+#services {
+  margin: -30px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid rgb(184, 11, 11);
+  margin: 43px;
+  padding: 20px;
+  border-radius: 23px;
+  background-color: #fff5f5;
+}
+#services .box img {
+  height: 210px;
+  width: 250px;
+  margin: auto;
+  display: block;
+  /* transform: rotate(90deg); */
+}
+
+/* Clinet section  */
+
+/* #client-section {
+  border: 2px solid rgb(184, 11, 11);
+  background-color: #fff5f5;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 95%;
+  border-radius: 20px;
+} */
+#client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(184, 11, 11);
+  background-color: #fff5f5;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 95%;
+  border-radius: 20px;
+}
+.client-item {
+  padding: 15px;
+  margin: 15px;
+}
+.client-item img {
+  height: 120px;
+}
+/* contact section  */
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXDiwp7mu57-V8mAI1dpuMq2962ANfXNO46w&usqp=CAU")
+    no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+.contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.contact-box form {
+  width: 50%;
+}
+.contact-box label {
+  font-size: 1.3rem;
+}
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.contact-box button {
+  margin: 5px;
+  width: 150px;
+}
+button {
+  padding: 3px;
+  margin-right: 5px;
+  margin-top: 2px;
+  cursor: pointer;
+  font-size: small;
+  font-weight: bold;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: rgb(248, 70, 70);
+}
+footer {
+  background-color: black;
+  color: white;
+}
+/* utility classes */
+.h1-sec {
+  font-size: 40px;
+  padding: 12px;
+  text-decoration: underline;
+  /* margin-top: 20px; */
+}
+
+.h2-sec {
+  font-size: 30px;
+  padding: 12px;
+}
+.btn {
+  padding: 5px 7px;
+  background-color: rgb(245, 107, 107);
+  margin: 16px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
